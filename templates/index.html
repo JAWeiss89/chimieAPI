@@ -4,9 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chimie API</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/app.css">
 </head>
 <body>
-    <h1>Chimie API</h1>
-    <h2>Docs</h2>
+    <div class="container">
+        <h1><span id="api">Ch</span>imie API<i class="fas fa-flask"></i></h1>
+        <h2>Docs</h2>
+    
+        <h4>Base URL: "https://chimie-api.herokuapp.com"</h4>
+        <div class="get-all">
+            <h3>Get list of all elements</h3>
+            <p>To get the entire list of elements along with some of their data, follow the base route with <em>"/api/elements"</em> added to URL</p>
+            <p>The json response will look similar to this:</p>
+            <div class="json-response-window code">
+                    {"elements": [<br>
+                      {
+                        "atomic_number": 1, <br>
+                        "mass": 1.008,<br> 
+                        "name": "Hydrogen",<br> 
+                        "symbol": "H"
+                      }, <br>
+                      {
+                        "atomic_number": 2, <br>
+                        "mass": 4.0026,<br> 
+                        "name": "Helium", <br>
+                        "symbol": "He"
+                      }, <br>
+                      {
+                        "atomic_number": 3, <br>
+                        "mass": 6.94, <br>
+                        "name": "Lithium", <br>
+                        "symbol": "Li"
+                      }<br>
+                    ]}
+            </div>
+        </div>
+
+        <div class="get-one">
+            <h3>Get details of one element</h3>
+            <p>To get a single element with all info, follow the base route with <em>"/api/elements/[id]"</em> added to the URL where id is the atomic number. </p>
+    
+            <p>Axios request in javascript to get data for helium would look like this:</p>
+            <p>
+                heliumData = await axios.get('https://chimie-api.herokuapp.com/api/2')
+            </p>
+            <p>And the json response for a single element will look like this:</p>
+            <div class="json-response-window code">
+                {"element": {<br>
+                  "atomic_number": 1, <br>
+                  "mass": 1.008,<br> 
+                  "name": "Hydrogen",<br> 
+                  "symbol": "H",<br>
+                  "group": "noble gas",<br>
+                  "boiling_point": 4.22,<br>
+                  "melting_point": .95,<br>
+                  "year_discovered": 1868<br>
+                }} 
+            </div>    
+        </div>
+    </div>
+
+
+ 
 </body>
 </html>

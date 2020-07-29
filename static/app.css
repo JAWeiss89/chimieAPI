@@ -1,0 +1,31 @@
+body {
+    color: rgb(34, 34, 34);
+    background-color: rgb(243, 243, 243);
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+} 
+
+.fa-flask {
+    color: rgb(136, 0, 0);
+    font-size: .7em;
+    margin-left: 5px;
+}
+
+#api {
+    background-color: rgb(136, 0, 0);
+    color:white;
+}
+
+.container {
+    background-color: rgb(221, 221, 221);
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+.code {
+    margin-left: 20px;
+    width:50%;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+}

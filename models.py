@@ -20,11 +20,30 @@ class Element(db.Model):
 
     id = db.Column(
         db.Integer,
-        primary_key=True,
-        autoincrement=True,
-    )
-
+        primary_key=True
+        )
     name = db.Column(
         db.String(20),
         nullable=False
+        )
+    symbol = db.Column(
+        db.String(2),
+        unique=True,
+        nullable=False
+        )
+    mass = db.Column(
+        db.Float()
+        )
+    group = db.Column(
+        db.String(15)
     )
+    year = db.Column(
+        db.Integer()
+    )
+    melting = db.Column(
+        db.Float()
+    )
+    boiling = db.Column(
+        db.Float()
+    )
+

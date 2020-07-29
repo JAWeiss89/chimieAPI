@@ -5,16 +5,25 @@ db.drop_all()
 db.create_all()
 
 h = Element(
-    name="Hydrogen"
+    id=1,
+    name="Hydrogen",
+    symbol="H",
+    mass= 1.008
 )
 
-h2 = Element(
-    name="Helium"
+he = Element(
+    id=2,
+    name="Helium",
+    symbol="He",
+    mass= 4.0026
 )
 
-al = Element(
-    name="Aluminum"
+li = Element(
+    id=3,
+    name="Lithium",
+    symbol="Li",
+    mass=6.94
 )
 
-db.session.add_all([h, h2, al])
+db.session.add_all([h, he, li])
 db.session.commit()
