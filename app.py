@@ -1,6 +1,6 @@
 """Flask app for Cupcakes"""
 
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from models import db, connect_db, Element
 
 app = Flask(__name__)
@@ -12,4 +12,4 @@ connect_db(app)
 
 @app.route('/')
 def show_homepage():
-    return "You hit the root route!"
+    return render_template('index.html')
