@@ -73,6 +73,9 @@ def update_element(id):
     element.name = request.json.get('name', element.name)
     element.symbol = request.json.get('symbol', element.symbol)
     element.mass = request.json.get('mass', element.mass)
+    element.group = request.json.get('group', element.group)
+    element.melting_point = request.json.get('melting_point', element.melting_point)
+    element.boiling_point = request.json.get('boiling_point', element.boiling_point)
 
     db.session.add(element)
     db.session.commit()
