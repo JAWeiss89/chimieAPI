@@ -1,7 +1,7 @@
 # chimieAPI
-Chimie API with information on chemical elements (Status: Not Complete)
+Chimie API with information on chemical elements (Status: Database not yet complete)
 
-<a><img width= 40% src="https://lh3.googleusercontent.com/Z0OVUc-BQ2m5NdFUj-_3NnoQ8Tar4_Mo8vn1w_0jDSmUi0QpkO4ID5SG56CGY4SgYMpxCJzFCkABhZw6ex0JqPqjNEwQN5tgiwTDuw5WGCildgctqgo1KWKksB9qVyVChtztfo8WZM6tpDcO2MHkj5PRPEgtWIe7RhBD1F8Eh3YYWu0rnq4LtD0k1OGsoY1bFpwf4lS14aHEnWYAgH5wxfzcyOYs_M_R14FmroUCu2UVAkvKaynGXwt8aDrPx6Q2HQEa__opvc6uWyuTGnwtRLSN0y-SPfnRXikhrys6GBM_mtGqlOqds4-ZQ8UxhxVGBJ1wBtW1j6MQvuqSXbaqG-5KvaowNT2WexNBFD6DmwIN9PjD8Gud5j8QpJHNU4mz6f0Srn5QcP49suww9LAyXXsV7-IQjV3PMv5GbWtGO4jKScANcSJm7ZQKVbuglKM4gsN7AtV25wJbaIo_GJxBE3xc427WTTERQiiku6Fi1Tk4BGfb84F-z1OsePu-MQCQj33BCSFLawcuo3NHjoZIAYB2RpqV7aZWETMh6YlP_liofDAhR00KdzBlruOUodUUNik46njdFieoUGKlTEB8m9TkNy2AkmwzUSoN_RP_sy3Tcxc20MdMB9jXH1gUC88kcrnJeAbkfHH3D5KlSVvNaRHAZfu-1VZel2iO-IBK2uweKuOgzM9dYyP1Ab8y=w1450-h930-no?authuser=0"></a>
+<a><img width= 40% src="https://www.jorgeweiss.com/static/chimie-desktop.png"></a>
 
 An API for all 118 chemical elements. How many protons does a Silver atom have? What's the melting point of Sodium? Chimie can provide this information and more. As more element data gets added to API, more endpoints will be added to the application including being able to retrieve information for a specific element group. 
 
